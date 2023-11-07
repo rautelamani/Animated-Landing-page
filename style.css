@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Gilroy";
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    color: #DDF2FD;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-image: url('./images/bg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-color: #dadada;
+}
+#center{
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    transform: translate(0%,-50%);
+    width: 80%;
+    height: 75%;
+    background-color:rgba(22, 72, 99,0.9 );
+    opacity: 15;
+}
+/* navigation Bar */
+#nav{
+    padding:20px;
+}
+#nav #nright{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 30px;
+
+}
+.animated{
+    color:#fff;
+    text-decoration: none;
+}
+.animated::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #4f94b8;
+    transition: width 0.3s ease;
+}
+.animated:hover::after{
+    width: 100%;
+}
+
+/* center part */
+#center-container{
+    display: flex;
+    /* background-color: #a26464; */
+    height: 100%;
+    width: 100%;
+}
+
+#images{
+    position: relative;
+    /* background-color: aqua; */
+    top: 7vw;
+    width: 42%;
+    height: 54%;
+    left: 5vw;
+}
+.imagecontainer{
+    overflow: hidden;
+    position: absolute;
+    width:0%;
+    height: 100%;
+    /* background:yellow; */
+}
+.imagecontainer img{
+    height: 100%;  
+}
+#text-container{
+    position: relative;
+    /* background-color: aqua; */
+ 
+    width: 40%;
+    height: 50%;
+    left: 7vw;
+}
+#text-container h2{
+     text-align: center;
+     font-size: 2.5rem;
+     font-family: 'Amatic SC', cursive;
+     color:#75b6d9;
+}
+#text-container h1{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    margin-top: 3vw;
+    letter-spacing: 10px;
+    line-height: 4vw;
+    color: #e4c093;
+}
+#buttonC{
+    height: 12px;
+    margin-top: 3vw;
+    text-align: center;
+} 
+#buttonC button{
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    background-color:#427D9D;
+    outline: none;
+    border: none;
+    border-radius: 0 50% 50% 0;
+    font-size: medium;
+}
+#buttonC button:hover{
+    background-color:#DDF2FD;
+    color: #164863;
+}
+#text-container h3{
+    margin-top: 5vw;
+    font-family: 'Playfair Display', serif;
+    color:#4f94b8;
+}
